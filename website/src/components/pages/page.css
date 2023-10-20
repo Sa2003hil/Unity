@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Lato:wght@400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -19,31 +20,44 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: auto;
     /* z-index: -1; */
 }
 
 .content {
     text-align: center;
-    height: 70vh;
+    height: 87vh;
 }
 
 .content h1 {
-    font-size: 75px;
+    font-size: 55px;
     color: #fff;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     text-align: center;
     font-weight: 700;
-
-    font-size: clamp(50px, 7.5vw + 10px, 100px);
+    font-family: 'Lato';
+    font-size: clamp(50px, 6.5vw + 10px, 100px);
+}
+.content h2 {
+    font-size: 55px;
+    color: #fff;
+    /* margin-bottom: 10px; */
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Lato';
+    font-size: clamp(50px, 5.5vw + 10px, 100px);
 }
 .content h3 {
-    /* font-size: 1px; */
     color: #fff;
+    letter-spacing: 4.2px;
+    line-height: 40px;
+    font-size: 14px;
+    line-height: 1.5;
     /* margin-bottom: 50px; */
     text-align: center;
-    font-weight: 400;
-
-    font-size: clamp(10px, 1.5vw + 9px, 80px);
+    font-weight: 700;
+    /* font-family: 'Lato'; */
+    /* font-size: clamp(13px, 1.3vw + 2px, 80px); */
 }
 
 .content a {
@@ -146,9 +160,9 @@ body {
 
 .button {
     display: inline-block;
-    border: 2px solid black;
+    border: 2px solid rgb(107, 107, 231);
     /* position: fixed; */
-    padding: 1rem 2rem;
+    padding: 6px 2rem;
     border-radius: 10rem;
     background-color: transparent;
     color: #fff;
@@ -167,9 +181,9 @@ body {
 
 .button:hover {
     /* the color of text you want to show after hover */
-    color: black;
+    color: white;
     /* transform: translateX(10px); */
-    border: 2px solid white;
+    border: 2px solid rgb(107, 107, 231);
 
 }
 
@@ -181,7 +195,7 @@ body {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: white;
+    background-color: rgb(107, 107, 231);
     z-index: -1;
     border-radius: 10rem;
     transition: 0.3s ease all;
