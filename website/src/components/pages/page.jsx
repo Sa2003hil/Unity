@@ -1,6 +1,6 @@
 // import React from "react";
 // import backgroundImage from "../../assets/remote.png";
-import videoFile from "../../assets/Apple.mp4";
+import videoFile from "../../assets/Video.mp4";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import './page.css'
