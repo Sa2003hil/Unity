@@ -1,33 +1,140 @@
-.video-bg{
-    width: 100%;
-    height: 100vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+.container {
+    /* height: 100vh;
+    width: 100%; */
+    position: relative;
+    background-color: rgba(1, 0, 9, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* z-index: -1; */
+}
+
+.content {
+    text-align: center;
+    height: 70vh;
+}
+
+.content h1 {
+    font-size: 75px;
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+
+    font-size: clamp(50px, 7.5vw + 10px, 100px);
+}
+.content h3 {
+    /* font-size: 1px; */
+    color: #fff;
+    /* margin-bottom: 50px; */
+    text-align: center;
+    font-weight: 400;
+
+    font-size: clamp(10px, 1.5vw + 9px, 80px);
+}
+
+.content a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 4px 29px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.content a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.bg-clip {
     position: absolute;
     top: 0;
-    z-index: -1;
-    object-fit: cover;
-    background-color: rgba(0, 0, 0, 0.6);
-
-}
-
-.textmain{
-    z-index: 1;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha (last value) for opacity */
-  z-index: 1; /* Make sure it's above the video element */
-}
-
-.bg-overlay{
+    left: 0;
+    width: 100%;
     height: 100%;
-    height: 6rem;
-    background-color: rgb(0, 0, 0);
+    object-fit: fill;
+    bottom: 0;
+    object-fit: cover;
+    z-index: -1;
 }
 
+@media (min-aspect-ratio:16/9) {
+    .bg-clip {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .bg-clip {
+        width: auto;
+        height: 100%;
+    }
+}
+/* Animation */
+
+
+.content p.animate-text {
+    font-size: 74px;
+    font-weight: 600;
+    display: inline-block;
+  }
+  
+  .content p span {
+    display: none;
+    color: #fff;
+    /* overflow: hidden; */
+  }
+  
+  /* Apply animation to span elements */
+  .content p span.text-in {
+    display: inline-block;
+    overflow: hidden;
+    animation: textIn 0.5s ease;
+  }
+  
+  .content p span.text-out {
+    animation: textOut 0.5s ease;
+    overflow: hidden;
+  }
+  @keyframes textIn {
+    0% {
+      transform: translateY(100%);
+      overflow: hidden;
+    }
+
+    100% {
+      transform: translateY(0%);
+      overflow: hidden;
+    }
+}
+
+@keyframes textOut {
+    0% {
+      transform: translateY(0%);
+      overflow: hidden;
+    }
+
+    100% {
+      transform: translateY(-100%);
+        overflow: hidden;
+    }
+}
 /* Button styling */
 .arrow{
     color: #fff;
