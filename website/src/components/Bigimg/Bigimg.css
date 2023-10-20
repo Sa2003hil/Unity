@@ -1,0 +1,25 @@
+
+.container{
+  position: relative;
+}
+video{
+  width: 20%;
+  height: 10%%;
+}
+
+.text-box{
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  background-color: #000;
+  /* height: 100%;
+  width: 100%; */
+  margin: auto;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-weight: 900;
+  mix-blend-mode: multiply;
+}
