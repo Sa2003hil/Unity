@@ -26,8 +26,8 @@ export default function Section1() {
                 <h2>IMAGINE</h2>
                 <h1>WITH UNITY</h1>
                 {/* <a href="#">Download</a> */}
-                <button className="button">Download  <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffff", }} className="arrow" /></button>
-                <div className=" mt-6">
+                <div className="mt-[-3rem]"><button className="button">Download  <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffff", }} className="arrow" /></button></div>
+                <div className="image-container mt-6 h-[22vh]">
                     <img src={img} alt="" className="m-auto mt-4" />
                 </div>
             </div>
